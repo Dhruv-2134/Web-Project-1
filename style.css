@@ -1,0 +1,148 @@
+
+
+*{ margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.header
+{
+min-height: 100vh;
+width: 100%;
+background: black;
+color: white;
+position: relative;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo
+{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.nav-links
+{
+    text-align: right;
+    background: red;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li a:hover
+{
+    color: black;
+}
+.left-sidebar
+{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+}
+.row
+{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -1%;
+}
+.left-col
+{
+    flex-basis: 40%;
+}
+.right-col
+{
+    flex-basis: 55%;
+}
+.left-col img
+{
+    width: 80%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.left-col img:hover
+{
+    filter: grayscale(1);
+}
+.right-col h1
+{
+    font-style: 55px;
+    font-weight: 600;
+}
+.right-col p
+{
+    color: grey;
+    margin: 100px 0 70px;
+}
+.social-media
+{
+    display: flex;
+    margin-top: 120px;
+}
+.icon
+{
+    width: 100px;
+    height: 100px;
+    background: grey;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px; 
+    position: relative;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.icon i
+{
+    width: 28px;
+}
+.icon a
+{
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 200%;
+    height: 200%;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a:hover
+{
+    opacity: 0.5;
+}
+.icon:hover
+{
+    transform: translateY(-5px);
+}
